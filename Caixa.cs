@@ -40,14 +40,17 @@ namespace CaixaDeMercado
         public void menuManager()
         {
             string aux;
-            int option;
+            int option,n;
 
             do
             {
-                System.Console.WriteLine("\nBem vindo {0}", personName.Substring(4));
                 System.Console.WriteLine("\n============================================\n");
-                System.Console.WriteLine("1 - Para adicionar novos produtos");
-                System.Console.WriteLine("2 - Para adicionar novos funcionarios");
+                System.Console.WriteLine("1 - Adicionar novo produto");
+                System.Console.WriteLine("2 - Alterar preço de produto");
+                System.Console.WriteLine("3 - Excluir produto");
+                System.Console.WriteLine("4 - adicionar Funcionario");
+                System.Console.WriteLine("5 - Excluir Funcionario");
+                System.Console.WriteLine("\n============================================\n");
                 option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -56,8 +59,30 @@ namespace CaixaDeMercado
                         addProduct();
                         break;
 
+                    
                     case 2:
+                        menu();
+                        n = change();
+                        System.Console.WriteLine("Novo preço");
+                        double newPrice = Convert.ToDouble(Console.ReadLine());
+                        db.updatePrice(newPrice,n);
+                            break;
+
+                    case 3:
+                        menu();
+                        n = change();
+                        db.deleteProduct(n);
+                        break;
+
+                    case 4:
                         addEmployer();
+                        break;
+
+                    case 5:
+                        db.listEmployer();
+                        System.Console.WriteLine("Informe o numero do crachá");
+                        int id = Convert.ToInt32(Console.ReadLine());
+                        db.deleteEmployer(id);
                         break;
                 }
 
@@ -73,6 +98,22 @@ namespace CaixaDeMercado
             Console.ReadLine();
         }
 
+        public int change()
+        {
+            System.Console.WriteLine("Escolha uma das opções de cima:");
+            int option = Convert.ToInt32(Console.ReadLine());
+
+            if (option > limit)
+            {
+                System.Console.WriteLine("Opção invalida");
+                return 0;
+            }
+            else
+            {
+                return option;
+            }
+        }
+        
         public void addEmployer()
         {
             System.Console.WriteLine("============================================\n");
@@ -164,7 +205,7 @@ namespace CaixaDeMercado
 
             if (caixa.personName.Contains("invalid"))
             {
-                System.Console.WriteLine("Cracha invalido");
+                System.Console.WriteLine("Crachá invalido");
             }
             else
             {
@@ -178,6 +219,5 @@ namespace CaixaDeMercado
                 }
             }
         }
-
     }
 }

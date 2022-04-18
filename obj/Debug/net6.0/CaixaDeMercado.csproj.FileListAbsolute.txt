@@ -70,6 +70,7 @@ C:/Users/Joao's computer/workspace/csharp/CaixaDeMercado/obj/Debug/net6.0/ref/Ca
 /home/joyboy/workspace/csharp/Sistema-de-caixa/obj/Debug/net6.0/ref/CaixaDeMercado.dll
 /home/joyboy/workspace/csharp/Sistema-de-caixa/obj/Debug/net6.0/CaixaDeMercado.pdb
 /home/joyboy/workspace/csharp/Sistema-de-caixa/obj/Debug/net6.0/CaixaDeMercado.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\Joao's computer\workspace\csharp\Sistema-de-caixa\bin\Debug\net6.0\CaixaDeMercado.exe
 C:\Users\Joao's computer\workspace\csharp\Sistema-de-caixa\bin\Debug\net6.0\CaixaDeMercado.deps.json
 C:\Users\Joao's computer\workspace\csharp\Sistema-de-caixa\bin\Debug\net6.0\CaixaDeMercado.runtimeconfig.json
@@ -106,3 +107,5 @@ C:\Users\Joao's computer\workspace\csharp\Sistema-de-caixa\obj\Debug\net6.0\refi
 C:\Users\Joao's computer\workspace\csharp\Sistema-de-caixa\obj\Debug\net6.0\CaixaDeMercado.pdb
 C:\Users\Joao's computer\workspace\csharp\Sistema-de-caixa\obj\Debug\net6.0\CaixaDeMercado.genruntimeconfig.cache
 C:\Users\Joao's computer\workspace\csharp\Sistema-de-caixa\obj\Debug\net6.0\ref\CaixaDeMercado.dll
+=======
+>>>>>>> 4276f2d84b9d000169f1757ce7c90c78ce0d4f8f

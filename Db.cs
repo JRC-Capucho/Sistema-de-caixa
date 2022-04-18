@@ -134,6 +134,40 @@ namespace CaixaDeMercado
             return price;
         }
 
+        private string checkListEmployer = "select * from employer;"; 
+
+        public void listEmployer()
+        {
+            try
+            {
+                command = new MySqlCommand(checkListEmployer, connection);
+
+                connection.Open();
+
+                System.Console.WriteLine("\n============================================\n");
+                string data = "[Crachá]=-=[Nome]\n";
+
+                reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    data += "    " + Convert.ToString(reader["PersonID"]) + "\t  " + Convert.ToString(reader["Name"]) + "\n";
+                }
+                System.Console.WriteLine(data);
+                System.Console.WriteLine("============================================\n");
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                System.Console.WriteLine("Erro " + ex.Message.ToString());
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        
+
         private string addEmployer = "insert into employer(PersonID, Name) values (@personid, @name)";
 
         public void insertEmployer(int personid, string name)
@@ -188,6 +222,8 @@ namespace CaixaDeMercado
 
         }
 
+        
+
         private string checkManager = "select Name from manager where PersonID = @personid";
 
         public string readerManager(int personid)
@@ -216,6 +252,84 @@ namespace CaixaDeMercado
             }
 
             return name;
+        }
+
+        private string removeProduct = "delete from product where id=@id;";
+
+        public void deleteProduct( int id )
+        {
+            try
+            {
+                command = new MySqlCommand(removeProduct, connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                connection.Open();
+                
+                command.ExecuteNonQuery();
+                
+                
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                System.Console.WriteLine("Erro " + ex.Message.ToString());
+            }
+            finally
+            {
+                System.Console.WriteLine("Produto removido com sucesso!");
+                connection.Close();
+            }
+
+        }
+
+        private string changePrice = "update product set price=@newPrice where id=@id;";
+
+        public void updatePrice( double newPrice, int id )
+        {
+            try
+            {
+                command = new MySqlCommand(changePrice, connection);
+                command.Parameters.AddWithValue("@newPrice", newPrice);
+                command.Parameters.AddWithValue("@id", id);
+
+                connection.Open();
+                
+                command.ExecuteNonQuery();
+                
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                System.Console.WriteLine("Erro " + ex.Message.ToString());
+            }
+            finally
+            {
+                System.Console.WriteLine("Preço alterado com sucesso!");
+                connection.Close();
+            }
+        }
+
+        private string removeEmployer = "delete from employer where PersonID=@personid;";
+
+        public void deleteEmployer( int personid )
+        {
+            try
+            {
+                command = new MySqlCommand(removeEmployer, connection);
+                command.Parameters.AddWithValue("@personid", personid);
+
+                connection.Open();
+
+                command.ExecuteNonQuery();
+                
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                System.Console.WriteLine("Erro " + ex.Message.ToString());
+            }
+            finally
+            {
+                System.Console.WriteLine("Funcionario removido com sucesso!");
+                connection.Close();
+            }
         }
 
     }
