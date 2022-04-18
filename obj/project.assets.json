@@ -897,11 +897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\CaixaDeMercado.csproj",
+      "projectUniqueName": "C:\\Users\\Joao's computer\\workspace\\csharp\\Sistema-de-caixa\\CaixaDeMercado.csproj",
       "projectName": "CaixaDeMercado",
-      "projectPath": "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\CaixaDeMercado.csproj",
+      "projectPath": "C:\\Users\\Joao's computer\\workspace\\csharp\\Sistema-de-caixa\\CaixaDeMercado.csproj",
       "packagesPath": "C:\\Users\\Joao's computer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\obj\\",
+      "outputPath": "C:\\Users\\Joao's computer\\workspace\\csharp\\Sistema-de-caixa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joao's computer\\AppData\\Roaming\\NuGet\\NuGet.Config",

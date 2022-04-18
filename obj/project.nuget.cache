@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R2IWTahEU9STfLTshS17DW6HhMfnG1qUjRANSARcL8cS1SIWFWknzCYTNX83bhKjvGn8dZLO+kdbQqU2VAoGpw==",
+  "dgSpecHash": "5SGKR6vea3hfhY8wxWOJFSoB66O6hWTg+Gc5Fw/jFfp6SOljdiAet4js3gY9YFRg+LzW+ZzkU3l/NitcDNmMWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\CaixaDeMercado.csproj",
+  "projectFilePath": "C:\\Users\\Joao's computer\\workspace\\csharp\\Sistema-de-caixa\\CaixaDeMercado.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joao's computer\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Joao's computer\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
