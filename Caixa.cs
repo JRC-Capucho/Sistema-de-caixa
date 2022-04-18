@@ -44,10 +44,7 @@ namespace CaixaDeMercado
 
             do
             {
-                System.Console.WriteLine("\nBem vindo {0}", personName.Substring(4));
                 System.Console.WriteLine("\n============================================\n");
-                System.Console.WriteLine("1 - Para adicionar novos produtos");
-                System.Console.WriteLine("2 - Para adicionar novos funcionarios");
                 option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
