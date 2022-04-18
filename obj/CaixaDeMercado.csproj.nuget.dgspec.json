@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\CaixaDeMercado.csproj": {}
+    "/home/joyboy/workspace/csharp/Sistema-de-caixa/CaixaDeMercado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\CaixaDeMercado.csproj": {
+    "/home/joyboy/workspace/csharp/Sistema-de-caixa/CaixaDeMercado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\CaixaDeMercado.csproj",
+        "projectUniqueName": "/home/joyboy/workspace/csharp/Sistema-de-caixa/CaixaDeMercado.csproj",
         "projectName": "CaixaDeMercado",
-        "projectPath": "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\CaixaDeMercado.csproj",
-        "packagesPath": "C:\\Users\\Joao's computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joao's computer\\workspace\\csharp\\CaixaDeMercado\\obj\\",
+        "projectPath": "/home/joyboy/workspace/csharp/Sistema-de-caixa/CaixaDeMercado.csproj",
+        "packagesPath": "/home/joyboy/.nuget/packages/",
+        "outputPath": "/home/joyboy/workspace/csharp/Sistema-de-caixa/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Joao's computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/joyboy/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,12 +57,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.2, 6.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }
