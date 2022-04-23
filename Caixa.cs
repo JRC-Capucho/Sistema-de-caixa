@@ -42,6 +42,8 @@ namespace CaixaDeMercado
             string aux;
             int option,n;
 
+            System.Console.WriteLine("\nBem vindo {0}", personName.Substring(4));
+
             do
             {
                 System.Console.WriteLine("\n============================================\n");
@@ -149,6 +151,7 @@ namespace CaixaDeMercado
             string aux;
             do
             {
+                System.Console.WriteLine("\nBem vindo {0}", personName.Substring(4));
                 menu();
                 chooseProduct();
 
@@ -164,7 +167,6 @@ namespace CaixaDeMercado
         public void menu()
         {
 
-            System.Console.WriteLine("\nBem vindo {0}", personName.Substring(4));
             limit = db.listProduct();
         }
 
